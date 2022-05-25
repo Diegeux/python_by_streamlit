@@ -8,7 +8,7 @@ import seaborn as sns
 def start_eda():
     st.title("Exploratory Data Analysis")
     st.header("Histograms")
-    df = pd.read_csv(r"folders\dataset\diabetes.csv")
+    df = pd.read_csv("folders/dataset/diabetes.csv")
     
     #HISTOGRAMS
     #2 columns - Pregnancies and Age

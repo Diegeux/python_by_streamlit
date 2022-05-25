@@ -5,7 +5,7 @@ import plotly.graph_objs as go
 
 def start_analysis():
   st.title("Analysis")
-  df = pd.read_csv(r"folders\dataset\diabetes.csv")
+  df = pd.read_csv("folders/dataset/diabetes.csv")
   
   #bar chart
   bar_fig = px.bar(df, x="Age", y="Pregnancies", color='Age', title="AGE X PREGNANCIES",width=800, height=440)
