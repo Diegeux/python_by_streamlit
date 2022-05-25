@@ -5,7 +5,7 @@ def start_dataset():
 
     #dataset
     st.title("Dataset")
-    df = pd.read_csv(r"C:\Users\dell\Desktop\Projetos\python_bi\python_by_streamlit\folders\dataset\diabetes.csv")
+    df = pd.read_csv(r"folders\dataset\diabetes.csv")
     st.dataframe(df)
     rows = df.shape[0]
     columns = df.shape[1]
