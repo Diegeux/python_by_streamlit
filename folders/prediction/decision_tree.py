@@ -20,6 +20,7 @@ def start_decision_tree(dataset_drop_outcome, outcome, x_train,y_train,x_test,y_
     st.write(np.mean(cross_val_score(decision_tree_model,dataset_drop_outcome.values,outcome,cv=10))*100)
     
     #Model Confusion Matrix
+    st.subheader('Confusion Matrix: ')
     st.write(confusion_matrix(y_test, decision_tree_model.predict(x_test)))
     
 

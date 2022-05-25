@@ -20,6 +20,7 @@ def start_naive_bayes(dataset_drop_outcome, outcome,  x_train, y_train, x_test, 
     st.write(np.mean(cross_val_score(gnb, dataset_drop_outcome.values,outcome,cv=10))*100)
 
     #Model Confusion Matrix
+    st.subheader('Confusion Matrix: ')
     st.write(confusion_matrix(y_test, gnb.predict(x_test)))
 
     #Model prediction
