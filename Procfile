@@ -1,0 +1,1 @@
+web: sh setup.sh && streamlit run DOA_Analytics_Prediction.py
