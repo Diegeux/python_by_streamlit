@@ -26,7 +26,7 @@ def start_analysis():
 
   scatter_layout = go.Layout(title='BMI X INSULIN',
                    yaxis={'title':'Insulin'},
-                   xaxis={'title': 'BMI'})
+                   xaxis={'title': 'BMI'},width=800, height=440)
   scatter_Fig = go.Figure(data=scatter_data, layout=scatter_layout)
   st.plotly_chart(scatter_Fig)
   
@@ -40,7 +40,7 @@ def start_analysis():
                 marker = {'color': 'red'})
   box_layout = go.Layout(title="TESTED POSITIVE AND NEGATIVE PER AGE (DISPERSION)",
                           yaxis={'title': 'Age'},
-                          xaxis={'title': 'Test status'})
+                          xaxis={'title': 'Test status'},width=870, height=440)
   box_data = [box_trace1,box_trace2]
   box_Fig = go.Figure(data=box_data,layout=box_layout)
   st.plotly_chart(box_Fig)

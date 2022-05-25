@@ -7,7 +7,7 @@ import folders.prediction.decision_tree as decision_tree
 
 def start_prediction():
   st.title("Prediction")
-  df = pd.read_csv(r"C:\Users\dell\Desktop\Projetos\python_bi\python_by_streamlit\folders\dataset\diabetes.csv")
+  df = pd.read_csv("folders/dataset/diabetes.csv")
   
   #separating data
   dataset_drop_outcome = df.drop(['Outcome'],1)
